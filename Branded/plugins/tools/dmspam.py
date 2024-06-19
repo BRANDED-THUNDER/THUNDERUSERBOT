@@ -1,15 +1,12 @@
-from pyrogram import filters, Client
-from pyrogram.types import *
 import os
 import sys
 import asyncio
+import re
 from random import choice
-OWNER_ID = 6829070386
+from config import (bot, HNDLR, SUDO_USERS, LOGS_CHANNEL)
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from cache.data import *
-from Branded import SUDO_USER
-SUDO_USERS = SUDO_USER
+from Modules.helpers.data import *
 Usage = f"**❌ Wrong Usage ❌** \n Type: `.help dmspam`"
 
 
